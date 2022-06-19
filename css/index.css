@@ -1,0 +1,267 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+padding: 0 20px;
+background-color: white;
+color: black;
+}
+.header-title{
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+}
+.header-nav-list{
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.main-img{
+  width: 100%;
+  height: 80%;
+  position: relative;  
+}
+.main-title{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 58%;
+  left: 22%;
+}
+.main-text{
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: 65%;
+  left: 35%;
+  font-weight: bold;
+}
+.main-wrapper{
+background-color: black;
+width: 100%;
+height: 1300px;
+}
+.main-top{
+  padding: 50px;
+}
+.top-title{
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  padding: 30px 0;
+}
+.top-text{
+  color: white;
+  font-size: 17px;
+  text-align: left;
+}
+
+.service-top-title{
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.service-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.service-card{
+  width: 49%;
+}
+.service-img{
+  width: 25%;
+}
+.service-text-box{
+  padding: 20px;
+}
+.service-title{
+  font-weight: bold;
+  padding: 10px;
+}
+.service-text{
+  font-size: 15px;
+}
+.service-button,
+.blog-button{
+  width: 300px;
+  padding: 10px 0;
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin: 60px auto;
+  display: block;
+
+}
+
+.news-wrapper{
+  background-color: black;
+  padding: 80px 0;
+}
+.news-inner{
+  width: 85%;
+  margin: 0 auto;
+}
+.news-head{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.news-top-title{
+color: white;
+font-size: 40px;
+}
+.news-button{
+  width: 200px;
+  padding: 10px 0;
+  color: white;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+.news-item{
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  border-bottom: 10px solid black;
+  width: 83%;
+  margin: 10px auto;
+}
+.news-date{
+  padding-right: 15px;
+}
+.news-text{
+  font-weight: bold;
+}
+
+.blog-list{
+  display: flex;
+  justify-content: space-between;
+}
+.blog-list{
+  width: 80%;
+}
+.blog-item{
+  width: 30%;
+}
+.blog-img{
+  width: 30%;
+}
+.blog-date{
+font-size: 18px;
+color: gray;
+}
+.blog-text{
+  font-weight: bold;
+}
+
+.flex-item-cr{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.company-item{
+  background-color: red;
+  width: 50%;
+  height: 250px;
+  margin-top: 100px;
+  cursor: pointer;
+  text-align: center;
+}
+.company-title {
+color: white;
+font-weight: bold;
+padding: 40px;
+font-size: 50px;
+position: absolute;
+top: 45%;
+left: 15%;
+}
+.recruit-title{
+  color: white;
+  font-weight: bold;
+  padding: 40px;
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+}
+
+.recruit-item{
+  background-color: black;
+  width: 50%;
+  height: 250px;
+  margin-top: 100px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.contact-wrapper{
+  background-color: lightgray;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+}
+.contact-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding-top: 130px;
+}
+.contact-text{
+  padding: 20px 0 0 0;
+
+}
+.contact-button {
+  width: 300px;
+  padding: 10px 0;
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin: 30px auto;
+  display: block;
+}
+
+  .footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+    .footer-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .footer-nav-list {
+      display: flex;
+      font-weight: bold;
+      width: 100%;
+      justify-content: center;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .copyright {
+      font-size: 10px;
+    }
