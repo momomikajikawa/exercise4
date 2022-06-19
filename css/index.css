@@ -1,3 +1,6 @@
+*{
+  border: solid 3px pink;
+}
 a{
   text-decoration: none;
   color: inherit;
@@ -7,6 +10,7 @@ a:hover {
   transition: 0.3s;
 }
 .header{
+position: fixed;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -14,24 +18,26 @@ height: 70px;
 padding: 0 20px;
 background-color: white;
 color: black;
+z-index: 10;
+width: 100%;
 }
 .header-title{
   font-size: 25px;
   cursor: pointer;
   color: black;
   font-weight: bold;
-  padding: 20px;
 }
 .header-nav-list{
   display: flex;
   font-weight: bold;
   cursor: pointer;
 }
-.header-nav-item:not(:last-child) {
+.header-nav-item{
   margin-right: 30px;
 }
 .main-img{
-  width: 100%;
+  padding-top: 60px;
+  width: 100vw;
   height: 80%;
   position: relative;  
 }
@@ -84,11 +90,9 @@ height: 1300px;
   flex-wrap: wrap;
   align-items: center;
 }
-.service-card{
-  width: 49%;
-}
+
 .service-img{
-  width: 25%;
+  width:100%;
 }
 .service-text-box{
   padding: 20px;
@@ -162,10 +166,9 @@ font-size: 40px;
   width: 80%;
 }
 .blog-item{
-  width: 30%;
 }
 .blog-img{
-  width: 30%;
+  width: 100%;
 }
 .blog-date{
 font-size: 18px;
@@ -265,4 +268,3 @@ left: 15%;
     .copyright {
       font-size: 10px;
     }
-    
