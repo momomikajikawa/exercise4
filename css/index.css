@@ -12,7 +12,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 height: 70px;
-padding: 0 20px;
+padding: 0 30px;
 background-color: white;
 color: black;
 z-index: 10;
@@ -37,24 +37,22 @@ width: 100%;
   display: none;
 }
 .top-wrapper {
-  position: relative;
-  height: 700px;
+  display: flex;
+  height: 80vw;
   background: url(../img/mv.png) center / cover;
+  align-items: center;
 }
 .main-title{
   color: white;
   font-size: 50px;
-  position: absolute;
-  top: 40%;
-  left: 22%;
+  text-align: center;
+  font-weight: bold;
 }
 .main-text{
-  position: absolute;
   color: white;
   font-size: 20px;
-  top: 50%;
-  left: 35%;
   font-weight: bold;
+  text-align: center;
 }
 .main-wrapper{
 background-color: black;
@@ -268,6 +266,12 @@ left: 15%;
       display: flex;
       justify-content: space-between;
       padding: 0 20px;
+      align-items: center;
+    }
+    .footer-nav-item::after{
+      content: "|";
+      display: inline-block;
+      padding: 0 10px;
     }
     .footer-nav-list {
       display: flex;
@@ -283,77 +287,100 @@ left: 15%;
 
     @media screen and (max-width:768px)
     {
-      
-      .header-nav{
+    .header-nav {
         display: none;
       }
-      .menu{
+    
+      .menu {
         display: inline-block;
-        position: relative;
-        cursor: pointer;
-        width: 36px;
+        width: 50px;
         height: 32px;
+        cursor: pointer;
+        position: relative;
         z-index: 10;
       }
+    
       .menu-line-top,
       .menu-line-middle,
-      .menu-line-bottom{
+      .menu-line-bottom {
+        display: inline-block;
         width: 100%;
         height: 4px;
-        position: absolute;
         background-color: #000;
+        position: absolute;
         transition: 0.5s;
       }
-      .menu-line-top{
+    
+      .menu-line-top {
         top: 0;
       }
-      .menu-line-middle{
+    
+      .menu-line-middle {
         top: 14px;
       }
-      .menu-line-botto{
+    
+      .menu-line-bottom {
         bottom: 0;
       }
-      .drawer-nav{
+    
+      .menu.open span:nth-of-type(1) {
+        top: 14px;
+        transform: rotate(45deg);
+      }
+    
+      .menu.open span:nth-of-type(2) {
+        opacity: 0;
+      }
+    
+      .menu.open span:nth-of-type(3) {
+        top: 14px;
+        transform: rotate(-45deg);
+      }
+    
+      .drawer-nav {
         display: block;
         position: absolute;
+        height: 100vh;
+        width: 100%;
         top: 0;
         left: -100%;
-        height: 100vw;
-        width: 100%;
-        background: white;
+        background: #fff;
         transition: .7s;
-        text-align: center;
       }
-      .drawer-nav-list{
+    
+      .drawer-nav-list {
         padding-top: 80px;
         text-align: center;
       }
-      .drawer-nav-item{
+    
+      .drawer-nav-item {
         margin-top: 40px;
         color: #0033cc;
         font-size: 18px;
       }
-      .drawer-nav ul{
-        padding-top: 80px;
-        text-align: center;
-      }
-      .drawer-nav ul li{
-        margin-top: 50px;
-      }
-      .menu.open span:nth-of-type(1){
-        top: 14px;
-        transform: rotate(45deg);
-      }
-      .menu.open span:nth-of-type(2){
-        opacity: 0;
-      }
-      .menu.open span:nth-of-type(3){
-        top: 14px;
-        transform: rotate(-45deg);
-      }
-      .in{
+    
+      .in {
         transform: translateX(100%);
       }
+    
+      .footer-copyright {
+        margin: 0 auto;
+      }
+      .footer-nav-list{
+      display: block;
+      }
+.footer-nav-item::after {
+    content: none;
+  }
+    }
+      .footer-nav-item {
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+        
+
+      }
+
 
       .service-card {
         width: 100%;
@@ -365,9 +392,14 @@ left: 15%;
       }
       .recruit-title{
         font-size: 30px;
-        
+        position: absolute;
+        top: 50%;
+        left: 60%;
       } 
       .company-title{
         font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
       }
     }
