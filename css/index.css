@@ -37,7 +37,9 @@ width: 100%;
   display: none;
 }
 .top-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 63%;
   background: url(../img/mv.png) center / cover;
 }
@@ -45,18 +47,12 @@ width: 100%;
   color: white;
   font-size: 50px;
   font-weight: bold;
-  position: absolute;
-  top: 45%;
-  left: 20%;
 }
 .main-text{
   color: white;
   font-size: 20px;
   font-weight: bold;
-  position: absolute;
-  top: 58%;
-  left: 30%;
-
+  text-align: center;
 }
 .main-wrapper{
 background-color: black;
@@ -368,12 +364,9 @@ left: 15%;
       }
       .main-title{
         font-size: 45px;
-        left: 15%;
+        text-align: center;
       }
     .main-text{
-      position: absolute;
-      top: 65%;
-      left: 15%;
       font-size: 18px;
       text-align: center;
     }
